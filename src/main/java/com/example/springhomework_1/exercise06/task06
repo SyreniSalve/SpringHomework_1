@@ -1,0 +1,27 @@
+Create a project based on Spring Boot using:
+
+    spring-boot-starter-web
+    lombok
+    spring-boot-starter-validation
+
+On the basis of the following properties from the application.properties file, create a configuration class which
+represents a property group.
+
+pl.sdacademy.zad6.email=test@gmail.com
+pl.sdacademy.zad6.first-name=Andrzej
+pl.sdacademy.zad6.last-name=Nowak
+pl.sdacademy.zad6.address=Nowakowskiego 1
+pl.sdacademy.zad6.age=20
+pl.sdacademy.zad6.values[0]=v1
+pl.sdacademy.zad6.values[1]=v2
+pl.sdacademy.zad6.custom-attributes.k1=v1
+pl.sdacademy.zad6.custom-attributes.k2=v2
+
+These properties should be validated at the start of the application and meet the following conditions:
+
+    the pl.sdacademy.zad6.email field is required and must be a valid email address
+    the pl.sdacademy.zad6.age field is required and must be at least 18
+    the pl.sdacademy.zad6.last-name field is required and must be between 3 and 20 characters
+    the pl.sdacademy.zad6.address field is required and consists of 2 parts separated by a space
+    the pl.sdacademy.zad6.values collection is not empty
+    the pl.sdacademy.zad6.custom-attributes collection is not empty

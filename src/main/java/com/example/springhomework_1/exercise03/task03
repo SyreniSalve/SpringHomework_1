@@ -1,0 +1,16 @@
+Create a project based on Spring Boot using:
+
+    spring-boot-starter-web
+    lombok
+
+public interface DummyLogger {
+  void sayHello();
+}
+
+Create two beans implementing the DummyLogger interface. In implementations of the sayHello method, let them print anyString to the screen. In addition, let one of the implementations be marked as the main bean.
+
+Create beans that are implementations of the CommandLineRunner interface, which:
+
+    inject the main implementation of the DummyLogger interface and calls the sayHello method at application startup
+    inject the second implementation of the DummyLogger interface and calls the sayHello method at application startup
+    inject all implementations of the DummyLogger interface and calls the sayHello method on both implementations at startup

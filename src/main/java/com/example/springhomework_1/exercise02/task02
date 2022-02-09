@@ -1,0 +1,10 @@
+Create a project based on Spring Boot using:
+
+    spring-boot-starter-web
+    lombok
+
+Inject the DummyLogger class into:
+
+    the CommandLineRunnerWithConstructorInjection class using a constructor
+    the CommandLineRunnerWithFieldInjection class directly to the field
+    the CommandLineRunnerWithSetterInjection class using a setter

@@ -1,0 +1,26 @@
+Create a project based on Spring Boot using:
+
+    spring-boot-starter-web
+    lombok
+
+Inject the following scaffold definition of the WelcomeMessageLogger class using the@ Value annotation, values, which you will define in the file application.properties using the following keys:
+
+    pl.sdacademy.welcome.text.value
+    pl.sdacademy.welcome.text.enable
+
+The property pl.sdacademy.welcome.text.value defines the text that should be printed at application startup. The default should be none.
+
+The property pl.sdacademy.welcome.text.enable defines whether the text defined in pl.sdacademy.welcome.text.value should be displayed on the screen. There is no default value.
+
+Inject both properties using the constructor.
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
+
+@Component
+@Slf4j
+public class WelcomeMessageLogger {
+
+  private String text;
+  private Boolean shouldLog;
+}

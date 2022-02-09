@@ -1,0 +1,6 @@
+Create a project based on Spring Boot using spring-boot-starter-web starter and lombok library.
+Then create a class DummyLogger in the project, which will log at the start of the application with the informationHello
+from task1.
+
+public class DummyLogger {
+}
